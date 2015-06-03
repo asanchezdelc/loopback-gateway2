@@ -25,7 +25,7 @@ var options = {
   dataSource: app.dataSources.db, // Data source for oAuth2 metadata persistence
   loginPage: '/login', // The login page url
   loginPath: '/login', // The login form processing url
-  useExistingTokenModel: true
+  useAccessTokenModel: true
 };
 
 oauth2.oAuth2Provider(
