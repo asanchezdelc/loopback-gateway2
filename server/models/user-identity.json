@@ -1,0 +1,27 @@
+{
+  "name": "userIdentity",
+  "plural": "userIdentities",
+  "base": "UserIdentity",
+  "properties": {
+    "credentials": {
+       "postgresql": {
+        "dataType": "CHARACTER VARYING(2048)"
+      }
+    },
+    "profile": {
+       "postgresql": {
+        "dataType": "CHARACTER VARYING(2048)"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
